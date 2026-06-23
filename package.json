@@ -1,0 +1,16 @@
+{
+  "name": "review-classifier",
+  "version": "1.0.0",
+  "description": "Пайплайн: CSV с отзывами -> LLM (OpenRouter) -> структурированный JSON с классификацией тональности и темы.",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env --experimental-strip-types src/classify.ts"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.0.0"
+  }
+}
